@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+
+function prometcustom_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_parameters){
+  switch ($route_name) {
+    case 'help.page.prometcustom':
+      return '<p>' . t('A minimal custom Drupal module for demonstration purposes.') . '</p>';
+  }
+}
+
+/**
+ * Implements Hook_menu().
+ */
+function prometcustom_menu() {
+  $items = array();
+
+  $items['prometcustom/hello'] = array(
+    'title' => 'Hello World',
+    'page callback' => 'prometcustom_hello_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for /prometcustom/hello
+ */
+
+function prometcustom_hello_page() {
+  return array(
+    '#markup' => t('Hello from the Promet Custom Module'),
+  );
+ }
