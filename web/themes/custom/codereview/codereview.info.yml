@@ -1,0 +1,17 @@
+name: Code Review
+type: theme
+description: 'A minimal Drupal 10 custom theme for Promet code review.'
+core_version_requirement: ^9 || ^10
+base theme: stable9
+# Define regions
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Top of page'
+  page_bottom: 'Bottom of page'
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  footer: Footer
