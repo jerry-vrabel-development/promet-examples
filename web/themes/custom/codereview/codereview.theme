@@ -5,3 +5,10 @@
 function codereview_preprocess_page(&$variables) {
   // Custom preprocessing
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for nodes.
+ */
+function codereview_preprocess_node(&$variables) {
+  // Custom logic for nodes.
+}

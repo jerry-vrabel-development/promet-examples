@@ -1,7 +1,0 @@
-<?php
-/**
- * Implements hook_preprocess_HOOK() for page templates.
- */
-function prometcustom_preprocess_page(&$variables) {
-  // Custom preprocessing
-}
