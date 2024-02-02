@@ -1,5 +1,33 @@
+/* Import Roboto and Roboto Slab from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700&display=swap');
+
+/* Set the root font size */
+html {
+  font-size: 16px; /* 1rem is equivalent to 16px */
+}
+
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Roboto, sans-serif; /* Use Roboto as the primary font */
+  font-size: 1rem; /* 1rem is equivalent to 16px */
+}
+
+/* Typography */
+.secondary-font {
+  font-family: 'Roboto Slab', serif; /* Use Roboto Slab as the secondary font */
+  font-weight: 400; /* Adjust font-weight as needed */
+  font-style: normal; /* Adjust font style as needed */
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif; /* Apply secondary font to headings for emphasis */
+}
+
+h2 {
+  color: #0073e6; /* Primary Color */
+  font-size: 2rem; /* Heading 2 size */
+  margin-bottom: 20px;
 }
 
 header {
@@ -7,6 +35,41 @@ header {
   color: #fff;
 }
 
+/* Content and Sidebar Styles */
 .content {
   margin: 20px 0;
+}
+
+#page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between grid items */
+}
+
+/* 12 column grid system */
+.col-12 {
+  flex: 0 0 calc(100% / 12 * 12);
+  max-width: calc(100% / 12 * 12);
+}
+
+.col-8 {
+  flex: 0 0 calc(100% / 12 * 8);
+  max-width: calc(100% / 12 * 8);
+}
+
+.col-8, .col-4 {
+  padding: 15px;
+}
+
+/* Basic Reset for Article */
+article {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjustments for the sidebar or additional content area */
+aside.col-4 {
+  background-color: #f4f4f4; /* Light grey, adjust as needed */
+  padding: 20px;
+  font-family: 'Roboto Slab', sans-serif;
 }

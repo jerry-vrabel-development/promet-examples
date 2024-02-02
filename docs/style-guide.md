@@ -22,15 +22,15 @@ Welcome to the Drupal 10 style guide. This guide outlines the design and style p
 
 ### Font
 
-- **Primary Font**: [Insert Primary Font Name]
-- **Secondary Font**: [Insert Secondary Font Name]
+- **Primary Font**: Roboto (sans-serif)
+- **Secondary Font**: Roboto Slab (serif)
 
 ### Font Sizes
 
-- Heading 1: 32px
-- Heading 2: 24px
-- Heading 3: 20px
-- Paragraph: 16px
+- Heading 1: 2rem (32px)
+- Heading 2: 1.5rem (24px)
+- Heading 3: 1.25rem (20px)
+- Paragraph: 1rem (16px)
 
 ## Color Palette
 
@@ -102,4 +102,4 @@ This style guide is a living document and will be updated as needed. It serves a
 
 Please refer to this guide whenever you are working on a Drupal 10 project to ensure a cohesive and visually pleasing user interface.
 
-For questions or updates to this guide, please contact [Insert Contact Information].
+For questions or updates to this guide, please contact [jerry.vrabel.development@gmail.com].
