@@ -1,0 +1,7 @@
+prometcustom.content:
+  path: '/prometcustom'
+  defaults:
+    _controller: '\Drupal\prometcustom\Controller\PrometCustomController::content'
+    _title: 'Promet Code Example'
+  requirements:
+    _permission: 'access content'
