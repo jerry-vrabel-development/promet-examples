@@ -2,14 +2,21 @@
 
 namespace Drupal\prometcustom\Controller;
 
+use Drupal\prometcustom\ApiIntegrationService;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\prometcustom\src\ApiIntegrationService;
 
 class PrometCustomController extends ControllerBase {
   protected $apiIntegrationService;
 
-  public function __construct(ApiIntegrationService $api_integration_service) {
-    $this->apiIntegrationService = $api_integration_service;
+  public function __construct(ApiIntegrationService $apiIntegrationService) {
+    $this->apiIntegrationService = $apiIntegrationService;
+  }
+
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('prometcustom.api_integration_service')
+    );
   }
 
   public function content() {

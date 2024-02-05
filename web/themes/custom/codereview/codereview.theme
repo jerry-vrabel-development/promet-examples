@@ -12,3 +12,14 @@ function codereview_preprocess_page(&$variables) {
 function codereview_preprocess_node(&$variables) {
   // Custom logic for nodes.
 }
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function react_example_theme_page_attachments_alter(array &$attachments) {
+  // Use the dev library if we're developing locally.
+  if (in_array('codereview/react_app', $attachments['#attached']['library']) && file_exists(__DIR__ . '/js/dist_dev')) {
+    $index = array_search('codereview/react_app', $attachments['#attached']['library']);
+    $attachments['#attached']['library'][$index] = 'codereview/react_app_dev';
+  }
+}

@@ -21,6 +21,7 @@ node_modules/
 =======
 /vendor/
 
+/themes/custom/codereview/js/dist_dev
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
