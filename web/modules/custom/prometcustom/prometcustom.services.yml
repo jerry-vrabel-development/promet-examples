@@ -1,0 +1,4 @@
+services:
+  prometcustom.api_integration_service:
+    class: Drupal\prometcustom\src\ApiIntegrationService
+    arguments: ['@http_client', '@logger.factory']
