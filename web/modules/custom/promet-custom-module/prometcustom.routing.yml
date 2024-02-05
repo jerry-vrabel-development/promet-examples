@@ -1,7 +1,0 @@
-prometcustom.content:
-  path: '/prometcustom'
-  defaults:
-    _controller: ''
-    _title: 'Promet Code Example'
-  requirements:
-    _permission: 'access content'
