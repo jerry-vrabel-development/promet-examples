@@ -3,7 +3,7 @@
 # excluded from Git version control. This is a common strategy to avoid
 # accidentally including private information in public repositories and patch
 # files.
-#
+
 # Because .gitignore can be specific to your site, this file has a different
 # name; updating Drupal core will not override your custom .gitignore file.
 
@@ -15,8 +15,12 @@
 # Generally you should only ignore the root vendor directory. It's important
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
+
 .env
 node_modules/
+=======
+/vendor/
+
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
